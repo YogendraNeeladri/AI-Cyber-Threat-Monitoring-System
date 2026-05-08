@@ -1,0 +1,436 @@
+[2026-05-03 21:58:29] INFO     model_manager        Starting model training | samples=15000
+[2026-05-03 21:58:29] INFO     feature_engineer     FeatureEngineer initialized with 22 features
+[2026-05-03 21:58:29] INFO     data_generator       Generating 15000 synthetic training samples...
+[2026-05-03 21:58:34] INFO     data_generator       Dataset generated. Distribution:
+[2026-05-03 21:58:34] INFO     data_generator         LOW: 2705 (18.0%)
+[2026-05-03 21:58:34] INFO     data_generator         MEDIUM: 2492 (16.6%)
+[2026-05-03 21:58:34] INFO     data_generator         HIGH: 4759 (31.7%)
+[2026-05-03 21:58:34] INFO     data_generator         CRITICAL: 5044 (33.6%)
+[2026-05-03 21:58:34] INFO     model_manager        Feature matrix: (15000, 22) | Classes: ['CRITICAL' 'HIGH' 'LOW' 'MEDIUM']
+[2026-05-03 21:58:34] INFO     model_manager        Training ensemble model (RandomForest + GradientBoosting + LogisticRegression)...
+[2026-05-03 21:59:54] INFO     model_manager        Training complete in 84.4s
+[2026-05-03 21:59:54] INFO     model_manager        Test accuracy: 0.8751 | F1: 0.8752 | CV: 0.8696 ± 0.0055
+[2026-05-03 21:59:54] INFO     model_manager        Model saved to C:\Users\ruppa giridhar\cyber-threat-system\ai-engine\models
+[2026-05-03 22:02:33] INFO     model_manager        Loaded pre-trained model | accuracy=0.875111
+[2026-05-03 22:02:33] INFO     feature_engineer     FeatureEngineer initialized with 22 features
+[2026-05-03 22:02:33] INFO     ai_server            =======================================================
+[2026-05-03 22:02:33] INFO     ai_server              AI Cyber Threat Detection Engine v1.0
+[2026-05-03 22:02:33] INFO     ai_server              Starting on port 7000
+[2026-05-03 22:02:33] INFO     ai_server            =======================================================
+[2026-05-03 22:02:33] INFO     ai_server            Loaded pre-trained model from disk.
+[2026-05-03 22:02:33] INFO     ai_server            Model ready: EnsembleVotingClassifier
+[2026-05-03 22:02:33] INFO     ai_server            Accuracy:    0.8751
+[2026-05-03 22:02:33] INFO     ai_server            =======================================================
+[2026-05-07 17:10:18] INFO     model_manager        Loaded pre-trained model | accuracy=0.875111
+[2026-05-07 17:10:18] INFO     feature_engineer     FeatureEngineer initialized with 22 features
+[2026-05-07 17:10:18] INFO     ai_server            =======================================================
+[2026-05-07 17:10:18] INFO     ai_server              AI Cyber Threat Detection Engine v1.0
+[2026-05-07 17:10:18] INFO     ai_server              Starting on port 7000
+[2026-05-07 17:10:18] INFO     ai_server            =======================================================
+[2026-05-07 17:10:18] INFO     ai_server            Loaded pre-trained model from disk.
+[2026-05-07 17:10:18] INFO     ai_server            Model ready: EnsembleVotingClassifier
+[2026-05-07 17:10:18] INFO     ai_server            Accuracy:    0.8751
+[2026-05-07 17:10:18] INFO     ai_server            =======================================================
+[2026-05-07 17:23:43] INFO     model_manager        Loaded pre-trained model | accuracy=0.875111
+[2026-05-07 17:23:43] INFO     feature_engineer     FeatureEngineer initialized with 22 features
+[2026-05-07 17:23:43] INFO     ai_server            =======================================================
+[2026-05-07 17:23:43] INFO     ai_server              AI Cyber Threat Detection Engine v1.0
+[2026-05-07 17:23:43] INFO     ai_server              Starting on port 7000
+[2026-05-07 17:23:43] INFO     ai_server            =======================================================
+[2026-05-07 17:23:43] INFO     ai_server            Loaded pre-trained model from disk.
+[2026-05-07 17:23:43] INFO     ai_server            Model ready: EnsembleVotingClassifier
+[2026-05-07 17:23:43] INFO     ai_server            Accuracy:    0.8751
+[2026-05-07 17:23:43] INFO     ai_server            =======================================================
+[2026-05-07 17:24:37] INFO     ai_server            ANALYZE | IP: 45.83.64.10 | Action: lateral_movement | Severity: HIGH | Confidence: 0.788 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:38] INFO     ai_server            ANALYZE | IP: 192.168.0.100 | Action: dns_tunneling | Severity: CRITICAL | Confidence: 0.824 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:38] INFO     ai_server            ANALYZE | IP: 121.4.120.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.481 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:40] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: dns_tunneling | Severity: CRITICAL | Confidence: 0.776 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:40] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: ransomware | Severity: CRITICAL | Confidence: 1.000 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:41] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: dns_tunneling | Severity: CRITICAL | Confidence: 0.940 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:41] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.566 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:42] INFO     ai_server            ANALYZE | IP: 103.75.190.12 | Action: port_scan | Severity: CRITICAL | Confidence: 0.972 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:42] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: dns_tunneling | Severity: CRITICAL | Confidence: 0.835 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:42] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: xss_attempt | Severity: MEDIUM | Confidence: 0.663 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:43] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: lateral_movement | Severity: HIGH | Confidence: 0.827 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:43] INFO     ai_server            ANALYZE | IP: 198.51.100.23 | Action: brute_force | Severity: CRITICAL | Confidence: 0.898 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:43] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: brute_force | Severity: CRITICAL | Confidence: 0.903 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:43] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: file_access | Severity: LOW | Confidence: 0.767 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:43] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: file_access | Severity: MEDIUM | Confidence: 0.777 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:44] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: login_attempt | Severity: LOW | Confidence: 0.944 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:44] INFO     ai_server            ANALYZE | IP: 5.188.86.172 | Action: login_attempt | Severity: LOW | Confidence: 0.873 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:44] INFO     ai_server            ANALYZE | IP: 5.188.86.172 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.963 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:45] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: xss_attempt | Severity: MEDIUM | Confidence: 0.497 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:45] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: failed_login | Severity: MEDIUM | Confidence: 0.984 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:46] INFO     ai_server            ANALYZE | IP: 62.173.145.10 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.927 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:46] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: failed_login | Severity: HIGH | Confidence: 0.972 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:46] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: login_attempt | Severity: LOW | Confidence: 0.938 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:46] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: sql_injection | Severity: HIGH | Confidence: 0.573 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:47] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: file_access | Severity: MEDIUM | Confidence: 0.569 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:47] INFO     ai_server            ANALYZE | IP: 192.168.2.88 | Action: dns_tunneling | Severity: HIGH | Confidence: 0.995 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:47] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: brute_force | Severity: CRITICAL | Confidence: 0.957 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:48] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.747 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:48] INFO     ai_server            ANALYZE | IP: 62.173.145.10 | Action: port_scan | Severity: CRITICAL | Confidence: 0.957 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:48] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: brute_force | Severity: CRITICAL | Confidence: 0.927 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:49] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: c2_communication | Severity: HIGH | Confidence: 0.583 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:49] INFO     ai_server            ANALYZE | IP: 80.82.77.33 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.629 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:50] INFO     ai_server            ANALYZE | IP: 5.188.86.172 | Action: sql_injection | Severity: CRITICAL | Confidence: 0.481 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:50] INFO     ai_server            ANALYZE | IP: 62.173.145.10 | Action: malware_activity | Severity: HIGH | Confidence: 0.616 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:50] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: file_access | Severity: MEDIUM | Confidence: 0.518 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:50] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.544 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:50] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: privilege_escalation | Severity: HIGH | Confidence: 0.559 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:50] INFO     ai_server            ANALYZE | IP: 103.75.190.12 | Action: lateral_movement | Severity: HIGH | Confidence: 0.804 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:50] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: file_access | Severity: LOW | Confidence: 0.669 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:51] INFO     ai_server            ANALYZE | IP: 104.21.45.67 | Action: failed_login | Severity: HIGH | Confidence: 0.643 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:51] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: xss_attempt | Severity: MEDIUM | Confidence: 0.566 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:51] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: brute_force | Severity: CRITICAL | Confidence: 0.913 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:51] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.994 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:51] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: lateral_movement | Severity: HIGH | Confidence: 0.812 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:51] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: c2_communication | Severity: HIGH | Confidence: 0.721 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:52] INFO     ai_server            ANALYZE | IP: 104.21.45.67 | Action: ddos | Severity: CRITICAL | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:52] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: brute_force | Severity: HIGH | Confidence: 0.781 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:52] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: ransomware | Severity: CRITICAL | Confidence: 0.753 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:52] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: xss_attempt | Severity: HIGH | Confidence: 0.623 | Model: EnsembleVotingClassifier
+[2026-05-07 17:24:52] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: malware_activity | Severity: HIGH | Confidence: 0.804 | Model: EnsembleVotingClassifier
+[2026-05-07 17:25:44] INFO     ai_server            ANALYZE | IP: 8.8.8.8 | Action: malware_activity | Severity: HIGH | Confidence: 0.713 | Model: EnsembleVotingClassifier
+[2026-05-07 17:25:45] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: login_attempt | Severity: LOW | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-07 17:25:45] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: port_scan | Severity: CRITICAL | Confidence: 0.859 | Model: EnsembleVotingClassifier
+[2026-05-07 17:25:45] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-07 17:25:46] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: ransomware | Severity: CRITICAL | Confidence: 0.988 | Model: EnsembleVotingClassifier
+[2026-05-07 17:25:47] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: ddos | Severity: CRITICAL | Confidence: 0.993 | Model: EnsembleVotingClassifier
+[2026-05-07 17:25:47] INFO     ai_server            ANALYZE | IP: 10.0.0.5 | Action: file_access | Severity: LOW | Confidence: 0.945 | Model: EnsembleVotingClassifier
+[2026-05-07 17:25:47] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.684 | Model: EnsembleVotingClassifier
+[2026-05-07 17:25:50] INFO     ai_server            BATCH | 5 events | 3 high/critical threats
+[2026-05-07 17:26:46] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: ddos | Severity: CRITICAL | Confidence: 0.995 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:46] INFO     ai_server            ANALYZE | IP: 192.42.116.16 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.953 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:46] INFO     ai_server            ANALYZE | IP: 5.188.86.172 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.964 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:46] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: xss_attempt | Severity: MEDIUM | Confidence: 0.603 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:46] INFO     ai_server            ANALYZE | IP: 104.21.45.67 | Action: port_scan | Severity: CRITICAL | Confidence: 0.974 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:46] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: sql_injection | Severity: HIGH | Confidence: 0.537 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:47] INFO     ai_server            ANALYZE | IP: 192.168.0.100 | Action: file_access | Severity: LOW | Confidence: 0.803 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:47] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: port_scan | Severity: CRITICAL | Confidence: 0.949 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:47] INFO     ai_server            ANALYZE | IP: 198.51.100.23 | Action: login_attempt | Severity: LOW | Confidence: 0.909 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:47] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: port_scan | Severity: HIGH | Confidence: 0.706 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:47] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: login_attempt | Severity: LOW | Confidence: 0.987 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:47] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.649 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:47] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: malware_activity | Severity: HIGH | Confidence: 0.769 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:48] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: c2_communication | Severity: HIGH | Confidence: 0.669 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:48] INFO     ai_server            ANALYZE | IP: 103.75.190.12 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.840 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:48] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: brute_force | Severity: CRITICAL | Confidence: 0.938 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:49] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: brute_force | Severity: CRITICAL | Confidence: 0.914 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:49] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: c2_communication | Severity: HIGH | Confidence: 0.555 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:49] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: brute_force | Severity: HIGH | Confidence: 0.739 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:49] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: ransomware | Severity: CRITICAL | Confidence: 1.000 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:49] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: ransomware | Severity: CRITICAL | Confidence: 1.000 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:49] INFO     ai_server            ANALYZE | IP: 62.173.145.10 | Action: lateral_movement | Severity: HIGH | Confidence: 0.790 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:49] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: c2_communication | Severity: HIGH | Confidence: 0.560 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:50] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: xss_attempt | Severity: HIGH | Confidence: 0.721 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:50] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: xss_attempt | Severity: MEDIUM | Confidence: 0.581 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:50] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: login_attempt | Severity: LOW | Confidence: 0.981 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:50] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: dns_tunneling | Severity: HIGH | Confidence: 0.857 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:50] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: sql_injection | Severity: HIGH | Confidence: 0.536 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:50] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: malware_activity | Severity: HIGH | Confidence: 0.518 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:51] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.662 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:51] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: privilege_escalation | Severity: HIGH | Confidence: 0.544 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:51] INFO     ai_server            ANALYZE | IP: 104.21.45.67 | Action: failed_login | Severity: MEDIUM | Confidence: 0.928 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:51] INFO     ai_server            ANALYZE | IP: 198.51.100.23 | Action: sql_injection | Severity: CRITICAL | Confidence: 0.513 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:51] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: brute_force | Severity: CRITICAL | Confidence: 0.920 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:51] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: ransomware | Severity: CRITICAL | Confidence: 1.000 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:52] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: port_scan | Severity: CRITICAL | Confidence: 0.508 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:52] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.996 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:52] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.992 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:52] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: port_scan | Severity: CRITICAL | Confidence: 0.976 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:52] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: lateral_movement | Severity: HIGH | Confidence: 0.823 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:52] INFO     ai_server            ANALYZE | IP: 121.4.120.50 | Action: file_access | Severity: MEDIUM | Confidence: 0.703 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:52] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: ransomware | Severity: CRITICAL | Confidence: 0.987 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:53] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: brute_force | Severity: HIGH | Confidence: 0.719 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:53] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.658 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:53] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: file_access | Severity: MEDIUM | Confidence: 0.658 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:53] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: file_access | Severity: MEDIUM | Confidence: 0.534 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:53] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: lateral_movement | Severity: HIGH | Confidence: 0.811 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:53] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.627 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:53] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: brute_force | Severity: CRITICAL | Confidence: 0.904 | Model: EnsembleVotingClassifier
+[2026-05-07 17:26:54] INFO     ai_server            ANALYZE | IP: 5.188.86.172 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.843 | Model: EnsembleVotingClassifier
+[2026-05-07 23:23:11] INFO     model_manager        Loaded pre-trained model | accuracy=0.875111
+[2026-05-07 23:23:11] INFO     feature_engineer     FeatureEngineer initialized with 22 features
+[2026-05-07 23:23:11] INFO     ai_server            =======================================================
+[2026-05-07 23:23:11] INFO     ai_server              AI Cyber Threat Detection Engine v1.0
+[2026-05-07 23:23:11] INFO     ai_server              Starting on port 7000
+[2026-05-07 23:23:11] INFO     ai_server            =======================================================
+[2026-05-07 23:23:11] INFO     ai_server            Loaded pre-trained model from disk.
+[2026-05-07 23:23:11] INFO     ai_server            Model ready: EnsembleVotingClassifier
+[2026-05-07 23:23:11] INFO     ai_server            Accuracy:    0.8751
+[2026-05-07 23:23:11] INFO     ai_server            =======================================================
+[2026-05-07 23:23:40] INFO     ai_server            ANALYZE | IP: 8.8.8.8 | Action: malware_activity | Severity: HIGH | Confidence: 0.713 | Model: EnsembleVotingClassifier
+[2026-05-07 23:23:40] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: login_attempt | Severity: LOW | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-07 23:23:41] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: port_scan | Severity: CRITICAL | Confidence: 0.859 | Model: EnsembleVotingClassifier
+[2026-05-07 23:23:41] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-07 23:23:41] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: ransomware | Severity: CRITICAL | Confidence: 0.988 | Model: EnsembleVotingClassifier
+[2026-05-07 23:23:42] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: ddos | Severity: CRITICAL | Confidence: 0.993 | Model: EnsembleVotingClassifier
+[2026-05-07 23:23:42] INFO     ai_server            ANALYZE | IP: 10.0.0.5 | Action: file_access | Severity: LOW | Confidence: 0.945 | Model: EnsembleVotingClassifier
+[2026-05-07 23:23:42] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.684 | Model: EnsembleVotingClassifier
+[2026-05-07 23:23:45] INFO     ai_server            BATCH | 5 events | 3 high/critical threats
+[2026-05-07 23:28:41] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.964 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:41] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: brute_force | Severity: CRITICAL | Confidence: 0.881 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:41] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: sql_injection | Severity: HIGH | Confidence: 0.697 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:42] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: c2_communication | Severity: HIGH | Confidence: 0.618 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:42] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: brute_force | Severity: HIGH | Confidence: 0.639 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:42] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.666 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:43] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.996 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:43] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.771 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:43] INFO     ai_server            ANALYZE | IP: 80.82.77.33 | Action: failed_login | Severity: HIGH | Confidence: 0.991 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:43] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.677 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:43] INFO     ai_server            ANALYZE | IP: 62.173.145.10 | Action: file_access | Severity: MEDIUM | Confidence: 0.533 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:44] INFO     ai_server            ANALYZE | IP: 192.168.0.100 | Action: login_attempt | Severity: LOW | Confidence: 0.995 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:44] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: file_access | Severity: MEDIUM | Confidence: 0.748 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:45] INFO     ai_server            ANALYZE | IP: 198.51.100.23 | Action: login_attempt | Severity: LOW | Confidence: 0.976 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:45] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.817 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:45] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: file_access | Severity: LOW | Confidence: 0.891 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:46] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: login_attempt | Severity: LOW | Confidence: 0.984 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:46] INFO     ai_server            ANALYZE | IP: 104.21.45.67 | Action: ddos | Severity: CRITICAL | Confidence: 0.999 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:46] INFO     ai_server            ANALYZE | IP: 192.42.116.16 | Action: port_scan | Severity: CRITICAL | Confidence: 0.943 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:46] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: xss_attempt | Severity: MEDIUM | Confidence: 0.638 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:47] INFO     ai_server            ANALYZE | IP: 192.42.116.16 | Action: failed_login | Severity: HIGH | Confidence: 0.994 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:47] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: file_access | Severity: LOW | Confidence: 0.491 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:47] INFO     ai_server            ANALYZE | IP: 80.82.77.33 | Action: c2_communication | Severity: HIGH | Confidence: 0.561 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:47] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: c2_communication | Severity: HIGH | Confidence: 0.647 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:48] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.598 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:49] INFO     ai_server            ANALYZE | IP: 192.42.116.16 | Action: brute_force | Severity: CRITICAL | Confidence: 0.895 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:49] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: brute_force | Severity: CRITICAL | Confidence: 0.934 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:50] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: port_scan | Severity: CRITICAL | Confidence: 0.939 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:51] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: dns_tunneling | Severity: CRITICAL | Confidence: 0.800 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:51] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: brute_force | Severity: CRITICAL | Confidence: 0.910 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:51] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: file_access | Severity: LOW | Confidence: 0.554 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:51] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: lateral_movement | Severity: HIGH | Confidence: 0.802 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:51] INFO     ai_server            ANALYZE | IP: 104.21.45.67 | Action: xss_attempt | Severity: HIGH | Confidence: 0.594 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:52] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: privilege_escalation | Severity: HIGH | Confidence: 0.528 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:52] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: privilege_escalation | Severity: HIGH | Confidence: 0.499 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:52] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: login_attempt | Severity: LOW | Confidence: 0.966 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:52] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: xss_attempt | Severity: MEDIUM | Confidence: 0.566 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:53] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.994 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:53] INFO     ai_server            ANALYZE | IP: 192.168.0.100 | Action: privilege_escalation | Severity: HIGH | Confidence: 0.621 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:53] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: login_attempt | Severity: LOW | Confidence: 0.961 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:53] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: ddos | Severity: CRITICAL | Confidence: 0.999 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:53] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: failed_login | Severity: HIGH | Confidence: 0.648 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:54] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: xss_attempt | Severity: HIGH | Confidence: 0.645 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:54] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.544 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:54] INFO     ai_server            ANALYZE | IP: 192.42.116.16 | Action: brute_force | Severity: CRITICAL | Confidence: 0.726 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:54] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: brute_force | Severity: CRITICAL | Confidence: 0.926 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:54] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: login_attempt | Severity: LOW | Confidence: 0.935 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:55] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: sql_injection | Severity: HIGH | Confidence: 0.694 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:55] INFO     ai_server            ANALYZE | IP: 192.42.116.16 | Action: login_attempt | Severity: LOW | Confidence: 0.983 | Model: EnsembleVotingClassifier
+[2026-05-07 23:28:55] INFO     ai_server            ANALYZE | IP: 45.83.64.10 | Action: lateral_movement | Severity: HIGH | Confidence: 0.795 | Model: EnsembleVotingClassifier
+[2026-05-07 23:29:01] INFO     ai_server            ANALYZE | IP: 8.8.8.8 | Action: malware_activity | Severity: HIGH | Confidence: 0.713 | Model: EnsembleVotingClassifier
+[2026-05-07 23:29:01] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: login_attempt | Severity: LOW | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-07 23:29:01] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: port_scan | Severity: CRITICAL | Confidence: 0.859 | Model: EnsembleVotingClassifier
+[2026-05-07 23:29:01] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-07 23:29:02] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: ransomware | Severity: CRITICAL | Confidence: 0.988 | Model: EnsembleVotingClassifier
+[2026-05-07 23:29:02] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: ddos | Severity: CRITICAL | Confidence: 0.993 | Model: EnsembleVotingClassifier
+[2026-05-07 23:29:02] INFO     ai_server            ANALYZE | IP: 10.0.0.5 | Action: file_access | Severity: LOW | Confidence: 0.945 | Model: EnsembleVotingClassifier
+[2026-05-07 23:29:02] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.684 | Model: EnsembleVotingClassifier
+[2026-05-07 23:29:05] INFO     ai_server            BATCH | 5 events | 3 high/critical threats
+[2026-05-07 23:31:40] INFO     ai_server            ANALYZE | IP: 8.8.8.8 | Action: malware_activity | Severity: HIGH | Confidence: 0.713 | Model: EnsembleVotingClassifier
+[2026-05-07 23:31:40] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: login_attempt | Severity: LOW | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-07 23:31:40] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: port_scan | Severity: CRITICAL | Confidence: 0.859 | Model: EnsembleVotingClassifier
+[2026-05-07 23:31:41] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-07 23:31:41] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: ransomware | Severity: CRITICAL | Confidence: 0.988 | Model: EnsembleVotingClassifier
+[2026-05-07 23:31:41] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: ddos | Severity: CRITICAL | Confidence: 0.993 | Model: EnsembleVotingClassifier
+[2026-05-07 23:31:41] INFO     ai_server            ANALYZE | IP: 10.0.0.5 | Action: file_access | Severity: LOW | Confidence: 0.945 | Model: EnsembleVotingClassifier
+[2026-05-07 23:31:42] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.684 | Model: EnsembleVotingClassifier
+[2026-05-07 23:31:44] INFO     ai_server            BATCH | 5 events | 3 high/critical threats
+[2026-05-07 23:34:23] INFO     ai_server            ANALYZE | IP: 8.8.8.8 | Action: malware_activity | Severity: HIGH | Confidence: 0.713 | Model: EnsembleVotingClassifier
+[2026-05-07 23:34:23] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: login_attempt | Severity: LOW | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-07 23:34:23] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: port_scan | Severity: CRITICAL | Confidence: 0.859 | Model: EnsembleVotingClassifier
+[2026-05-07 23:34:24] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-07 23:34:24] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: ransomware | Severity: CRITICAL | Confidence: 0.988 | Model: EnsembleVotingClassifier
+[2026-05-07 23:34:24] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: ddos | Severity: CRITICAL | Confidence: 0.993 | Model: EnsembleVotingClassifier
+[2026-05-07 23:34:24] INFO     ai_server            ANALYZE | IP: 10.0.0.5 | Action: file_access | Severity: LOW | Confidence: 0.945 | Model: EnsembleVotingClassifier
+[2026-05-07 23:34:25] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.684 | Model: EnsembleVotingClassifier
+[2026-05-07 23:34:27] INFO     ai_server            BATCH | 5 events | 3 high/critical threats
+[2026-05-07 23:40:58] INFO     ai_server            ANALYZE | IP: 8.8.8.8 | Action: malware_activity | Severity: HIGH | Confidence: 0.713 | Model: EnsembleVotingClassifier
+[2026-05-07 23:40:59] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: login_attempt | Severity: LOW | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-07 23:40:59] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: port_scan | Severity: CRITICAL | Confidence: 0.859 | Model: EnsembleVotingClassifier
+[2026-05-07 23:40:59] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-07 23:40:59] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: ransomware | Severity: CRITICAL | Confidence: 0.988 | Model: EnsembleVotingClassifier
+[2026-05-07 23:41:00] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: ddos | Severity: CRITICAL | Confidence: 0.993 | Model: EnsembleVotingClassifier
+[2026-05-07 23:41:00] INFO     ai_server            ANALYZE | IP: 10.0.0.5 | Action: file_access | Severity: LOW | Confidence: 0.945 | Model: EnsembleVotingClassifier
+[2026-05-07 23:41:00] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.684 | Model: EnsembleVotingClassifier
+[2026-05-07 23:41:03] INFO     ai_server            BATCH | 5 events | 3 high/critical threats
+[2026-05-07 23:47:49] INFO     model_manager        Loaded pre-trained model | accuracy=0.875111
+[2026-05-07 23:47:49] INFO     feature_engineer     FeatureEngineer initialized with 22 features
+[2026-05-07 23:47:49] INFO     ai_server            =======================================================
+[2026-05-07 23:47:49] INFO     ai_server              AI Cyber Threat Detection Engine v1.0
+[2026-05-07 23:47:49] INFO     ai_server              Starting on port 7000
+[2026-05-07 23:47:49] INFO     ai_server            =======================================================
+[2026-05-07 23:47:49] INFO     ai_server            Loaded pre-trained model from disk.
+[2026-05-07 23:47:49] INFO     ai_server            Model ready: EnsembleVotingClassifier
+[2026-05-07 23:47:49] INFO     ai_server            Accuracy:    0.8751
+[2026-05-07 23:47:49] INFO     ai_server            =======================================================
+[2026-05-07 23:51:19] INFO     ai_server            ANALYZE | IP: 8.8.8.8 | Action: malware_activity | Severity: HIGH | Confidence: 0.713 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:20] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: login_attempt | Severity: LOW | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:20] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: port_scan | Severity: CRITICAL | Confidence: 0.859 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:21] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:22] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: ransomware | Severity: CRITICAL | Confidence: 0.988 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:23] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: ddos | Severity: CRITICAL | Confidence: 0.993 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:24] INFO     ai_server            ANALYZE | IP: 10.0.0.5 | Action: file_access | Severity: LOW | Confidence: 0.945 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:24] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.684 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:27] INFO     ai_server            BATCH | 5 events | 3 high/critical threats
+[2026-05-07 23:51:30] INFO     ai_server            ANALYZE | IP: 62.173.145.10 | Action: port_scan | Severity: CRITICAL | Confidence: 0.937 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:31] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: file_access | Severity: LOW | Confidence: 0.797 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:32] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: failed_login | Severity: HIGH | Confidence: 0.667 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:32] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: brute_force | Severity: HIGH | Confidence: 0.939 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:33] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: file_access | Severity: LOW | Confidence: 0.459 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:33] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: ransomware | Severity: CRITICAL | Confidence: 1.000 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:35] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: dns_tunneling | Severity: HIGH | Confidence: 0.851 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:35] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: port_scan | Severity: HIGH | Confidence: 0.644 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:35] INFO     ai_server            ANALYZE | IP: 121.4.120.50 | Action: brute_force | Severity: CRITICAL | Confidence: 0.927 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:38] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: port_scan | Severity: CRITICAL | Confidence: 0.882 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:38] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: dns_tunneling | Severity: HIGH | Confidence: 0.996 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:38] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: malware_activity | Severity: HIGH | Confidence: 0.755 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:38] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: sql_injection | Severity: HIGH | Confidence: 0.541 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:39] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: failed_login | Severity: HIGH | Confidence: 0.992 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:39] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.846 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:39] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.849 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:40] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.983 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:40] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: file_access | Severity: LOW | Confidence: 0.848 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:40] INFO     ai_server            ANALYZE | IP: 62.173.145.10 | Action: privilege_escalation | Severity: HIGH | Confidence: 0.757 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:41] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: xss_attempt | Severity: HIGH | Confidence: 0.619 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:41] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.951 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:41] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.829 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:41] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: login_attempt | Severity: LOW | Confidence: 0.958 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:42] INFO     ai_server            ANALYZE | IP: 104.21.45.67 | Action: lateral_movement | Severity: HIGH | Confidence: 0.804 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:42] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: ddos | Severity: CRITICAL | Confidence: 0.996 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:42] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: xss_attempt | Severity: MEDIUM | Confidence: 0.644 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:42] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: ransomware | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:43] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: failed_login | Severity: MEDIUM | Confidence: 0.870 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:43] INFO     ai_server            ANALYZE | IP: 45.83.64.10 | Action: brute_force | Severity: CRITICAL | Confidence: 0.907 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:43] INFO     ai_server            ANALYZE | IP: 192.42.116.16 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.972 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:43] INFO     ai_server            ANALYZE | IP: 104.21.45.67 | Action: failed_login | Severity: MEDIUM | Confidence: 0.989 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:44] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: lateral_movement | Severity: HIGH | Confidence: 0.774 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:44] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: c2_communication | Severity: HIGH | Confidence: 0.576 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:44] INFO     ai_server            ANALYZE | IP: 121.4.120.50 | Action: xss_attempt | Severity: HIGH | Confidence: 0.860 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:45] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.593 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:45] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.857 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:45] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: port_scan | Severity: CRITICAL | Confidence: 0.942 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:45] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: failed_login | Severity: MEDIUM | Confidence: 0.961 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:46] INFO     ai_server            ANALYZE | IP: 198.51.100.23 | Action: failed_login | Severity: MEDIUM | Confidence: 0.846 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:46] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: login_attempt | Severity: LOW | Confidence: 0.989 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:46] INFO     ai_server            ANALYZE | IP: 198.51.100.23 | Action: login_attempt | Severity: LOW | Confidence: 0.968 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:46] INFO     ai_server            ANALYZE | IP: 5.188.86.172 | Action: c2_communication | Severity: CRITICAL | Confidence: 0.550 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:46] INFO     ai_server            ANALYZE | IP: 80.82.77.33 | Action: dns_tunneling | Severity: HIGH | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:47] INFO     ai_server            ANALYZE | IP: 198.51.100.23 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.993 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:47] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.995 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:47] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: port_scan | Severity: CRITICAL | Confidence: 0.964 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:47] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: sql_injection | Severity: HIGH | Confidence: 0.675 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:48] INFO     ai_server            ANALYZE | IP: 192.168.2.88 | Action: login_attempt | Severity: LOW | Confidence: 0.962 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:48] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: login_attempt | Severity: LOW | Confidence: 0.964 | Model: EnsembleVotingClassifier
+[2026-05-07 23:51:48] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: failed_login | Severity: HIGH | Confidence: 0.649 | Model: EnsembleVotingClassifier
+[2026-05-08 13:01:30] INFO     model_manager        Loaded pre-trained model | accuracy=0.875111
+[2026-05-08 13:01:30] INFO     feature_engineer     FeatureEngineer initialized with 22 features
+[2026-05-08 13:01:30] INFO     ai_server            =======================================================
+[2026-05-08 13:01:30] INFO     ai_server              AI Cyber Threat Detection Engine v1.0
+[2026-05-08 13:01:30] INFO     ai_server              Starting on port 7000
+[2026-05-08 13:01:30] INFO     ai_server            =======================================================
+[2026-05-08 13:01:30] INFO     ai_server            Loaded pre-trained model from disk.
+[2026-05-08 13:01:30] INFO     ai_server            Model ready: EnsembleVotingClassifier
+[2026-05-08 13:01:30] INFO     ai_server            Accuracy:    0.8751
+[2026-05-08 13:01:30] INFO     ai_server            =======================================================
+[2026-05-08 13:03:54] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: ransomware | Severity: CRITICAL | Confidence: 1.000 | Model: EnsembleVotingClassifier
+[2026-05-08 13:03:55] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: brute_force | Severity: CRITICAL | Confidence: 0.940 | Model: EnsembleVotingClassifier
+[2026-05-08 13:03:55] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.975 | Model: EnsembleVotingClassifier
+[2026-05-08 13:03:56] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: brute_force | Severity: CRITICAL | Confidence: 0.684 | Model: EnsembleVotingClassifier
+[2026-05-08 13:03:56] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.796 | Model: EnsembleVotingClassifier
+[2026-05-08 13:03:57] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: dns_tunneling | Severity: CRITICAL | Confidence: 0.878 | Model: EnsembleVotingClassifier
+[2026-05-08 13:03:58] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: file_access | Severity: LOW | Confidence: 0.938 | Model: EnsembleVotingClassifier
+[2026-05-08 13:03:58] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.524 | Model: EnsembleVotingClassifier
+[2026-05-08 13:03:58] INFO     ai_server            ANALYZE | IP: 104.21.45.67 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.996 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:00] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: xss_attempt | Severity: HIGH | Confidence: 0.608 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:00] INFO     ai_server            ANALYZE | IP: 45.83.64.10 | Action: dns_tunneling | Severity: HIGH | Confidence: 0.995 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:00] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: file_access | Severity: MEDIUM | Confidence: 0.709 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:01] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:01] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: lateral_movement | Severity: HIGH | Confidence: 0.779 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:01] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: xss_attempt | Severity: HIGH | Confidence: 0.672 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:02] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: c2_communication | Severity: HIGH | Confidence: 0.571 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:02] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.568 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:02] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: login_attempt | Severity: LOW | Confidence: 0.992 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:02] INFO     ai_server            ANALYZE | IP: 103.75.190.12 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.962 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:04] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: ddos | Severity: CRITICAL | Confidence: 0.996 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:05] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:05] INFO     ai_server            ANALYZE | IP: 103.75.190.12 | Action: login_attempt | Severity: LOW | Confidence: 0.985 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:06] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: c2_communication | Severity: HIGH | Confidence: 0.654 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:06] INFO     ai_server            ANALYZE | IP: 80.82.77.33 | Action: port_scan | Severity: CRITICAL | Confidence: 0.968 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:06] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: malware_activity | Severity: HIGH | Confidence: 0.780 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:07] INFO     ai_server            ANALYZE | IP: 5.188.86.172 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.995 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:08] INFO     ai_server            ANALYZE | IP: 167.94.138.30 | Action: port_scan | Severity: CRITICAL | Confidence: 0.650 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:08] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: failed_login | Severity: HIGH | Confidence: 0.577 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:08] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: lateral_movement | Severity: HIGH | Confidence: 0.801 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:08] INFO     ai_server            ANALYZE | IP: 192.168.2.88 | Action: brute_force | Severity: CRITICAL | Confidence: 0.879 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:09] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: file_access | Severity: MEDIUM | Confidence: 0.618 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:09] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: c2_communication | Severity: HIGH | Confidence: 0.717 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:09] INFO     ai_server            ANALYZE | IP: 192.168.2.88 | Action: ddos | Severity: CRITICAL | Confidence: 0.999 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:09] INFO     ai_server            ANALYZE | IP: 91.108.4.100 | Action: malware_activity | Severity: HIGH | Confidence: 0.633 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:10] INFO     ai_server            ANALYZE | IP: 80.82.77.33 | Action: brute_force | Severity: CRITICAL | Confidence: 0.882 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:10] INFO     ai_server            ANALYZE | IP: 103.75.190.12 | Action: malware_activity | Severity: HIGH | Confidence: 0.739 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:10] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: brute_force | Severity: CRITICAL | Confidence: 0.923 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:11] INFO     ai_server            ANALYZE | IP: 5.188.86.172 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.865 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:11] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: xss_attempt | Severity: HIGH | Confidence: 0.582 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:11] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.853 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:11] INFO     ai_server            ANALYZE | IP: 121.4.120.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.589 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:14] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: malware_activity | Severity: HIGH | Confidence: 0.835 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:14] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: brute_force | Severity: CRITICAL | Confidence: 0.721 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:14] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: port_scan | Severity: CRITICAL | Confidence: 0.956 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:14] INFO     ai_server            ANALYZE | IP: 192.42.116.16 | Action: port_scan | Severity: CRITICAL | Confidence: 0.941 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:15] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: brute_force | Severity: CRITICAL | Confidence: 0.913 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:15] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: c2_communication | Severity: HIGH | Confidence: 0.567 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:15] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: ransomware | Severity: CRITICAL | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:16] INFO     ai_server            ANALYZE | IP: 103.75.190.12 | Action: failed_login | Severity: MEDIUM | Confidence: 0.996 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:16] INFO     ai_server            ANALYZE | IP: 121.4.120.50 | Action: malware_activity | Severity: HIGH | Confidence: 0.782 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:17] INFO     ai_server            ANALYZE | IP: 103.75.190.12 | Action: lateral_movement | Severity: HIGH | Confidence: 0.807 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:17] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: ddos | Severity: CRITICAL | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:17] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: ddos | Severity: CRITICAL | Confidence: 0.995 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:17] INFO     ai_server            ANALYZE | IP: 103.75.190.12 | Action: ransomware | Severity: CRITICAL | Confidence: 0.904 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:17] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: brute_force | Severity: CRITICAL | Confidence: 0.915 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:18] INFO     ai_server            ANALYZE | IP: 45.141.84.120 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.959 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:18] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: failed_login | Severity: MEDIUM | Confidence: 0.934 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:18] INFO     ai_server            ANALYZE | IP: 185.220.101.45 | Action: port_scan | Severity: CRITICAL | Confidence: 0.963 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:18] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:19] INFO     ai_server            ANALYZE | IP: 192.42.116.16 | Action: login_attempt | Severity: MEDIUM | Confidence: 0.835 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:19] INFO     ai_server            ANALYZE | IP: 203.0.113.50 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.559 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:19] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: failed_login | Severity: MEDIUM | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:19] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: port_scan | Severity: CRITICAL | Confidence: 0.945 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:20] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: xss_attempt | Severity: MEDIUM | Confidence: 0.630 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:20] INFO     ai_server            ANALYZE | IP: 192.42.116.16 | Action: brute_force | Severity: CRITICAL | Confidence: 0.890 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:20] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: port_scan | Severity: CRITICAL | Confidence: 0.965 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:20] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: xss_attempt | Severity: MEDIUM | Confidence: 0.615 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:20] INFO     ai_server            ANALYZE | IP: 192.168.1.55 | Action: failed_login | Severity: HIGH | Confidence: 0.984 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:21] INFO     ai_server            ANALYZE | IP: 104.21.45.67 | Action: brute_force | Severity: CRITICAL | Confidence: 0.906 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:21] INFO     ai_server            ANALYZE | IP: 62.173.145.10 | Action: dns_tunneling | Severity: CRITICAL | Confidence: 0.928 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:22] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: xss_attempt | Severity: HIGH | Confidence: 0.616 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:22] INFO     ai_server            ANALYZE | IP: 185.220.100.255 | Action: ransomware | Severity: CRITICAL | Confidence: 0.999 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:22] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.519 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:23] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: malware_activity | Severity: HIGH | Confidence: 0.818 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:23] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.996 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:23] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.995 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:23] INFO     ai_server            ANALYZE | IP: 178.73.215.94 | Action: failed_login | Severity: HIGH | Confidence: 0.988 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:24] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: ransomware | Severity: CRITICAL | Confidence: 1.000 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:24] INFO     ai_server            ANALYZE | IP: 192.168.1.10 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.998 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:24] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: privilege_escalation | Severity: CRITICAL | Confidence: 0.615 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:24] INFO     ai_server            ANALYZE | IP: 172.31.255.50 | Action: port_scan | Severity: CRITICAL | Confidence: 0.955 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:25] INFO     ai_server            ANALYZE | IP: 77.88.55.88 | Action: malware_activity | Severity: CRITICAL | Confidence: 0.935 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:25] INFO     ai_server            ANALYZE | IP: 192.168.2.88 | Action: port_scan | Severity: CRITICAL | Confidence: 0.944 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:25] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: file_access | Severity: MEDIUM | Confidence: 0.613 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:26] INFO     ai_server            ANALYZE | IP: 156.89.12.34 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.996 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:26] INFO     ai_server            ANALYZE | IP: 45.83.64.10 | Action: ransomware | Severity: CRITICAL | Confidence: 0.988 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:26] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: file_access | Severity: LOW | Confidence: 0.724 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:26] INFO     ai_server            ANALYZE | IP: 121.4.120.50 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:26] INFO     ai_server            ANALYZE | IP: 194.165.16.78 | Action: login_attempt | Severity: LOW | Confidence: 0.962 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:27] INFO     ai_server            ANALYZE | IP: 192.168.0.100 | Action: file_access | Severity: LOW | Confidence: 0.936 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:27] INFO     ai_server            ANALYZE | IP: 192.168.2.88 | Action: login_attempt | Severity: LOW | Confidence: 0.992 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:27] INFO     ai_server            ANALYZE | IP: 149.28.54.89 | Action: file_access | Severity: MEDIUM | Confidence: 0.532 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:27] INFO     ai_server            ANALYZE | IP: 10.0.1.50 | Action: xss_attempt | Severity: HIGH | Confidence: 0.527 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:28] INFO     ai_server            ANALYZE | IP: 10.0.0.20 | Action: ransomware | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:28] INFO     ai_server            ANALYZE | IP: 172.16.0.10 | Action: file_access | Severity: LOW | Confidence: 0.883 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:28] INFO     ai_server            ANALYZE | IP: 192.168.2.88 | Action: data_exfiltration | Severity: CRITICAL | Confidence: 0.997 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:28] INFO     ai_server            ANALYZE | IP: 62.173.145.10 | Action: privilege_escalation | Severity: HIGH | Confidence: 0.616 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:28] INFO     ai_server            ANALYZE | IP: 5.188.86.172 | Action: file_access | Severity: LOW | Confidence: 0.538 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:29] INFO     ai_server            ANALYZE | IP: 121.4.120.50 | Action: sql_injection | Severity: HIGH | Confidence: 0.614 | Model: EnsembleVotingClassifier
+[2026-05-08 13:04:29] INFO     ai_server            ANALYZE | IP: 5.188.86.172 | Action: brute_force | Severity: CRITICAL | Confidence: 0.900 | Model: EnsembleVotingClassifier
